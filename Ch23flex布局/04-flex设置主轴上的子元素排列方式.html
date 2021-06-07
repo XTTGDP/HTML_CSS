@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 给父级添加flex属性 */
+            display: flex;
+            width: 800;
+            height: 500px;
+            background-color: pink;
+            flex-direction: column;
+            /* 从头部开始 */
+            /* justify-content: flex-start; */
+            /* 从尾部开始 */
+            /* justify-content: flex-end; */
+            /* 在主轴居中对齐 */
+            /* justify-content: center; */
+            /* 平分剩余空间 */
+            /* justify-content: space-around; */
+            /* 先贴两边，再平分剩余空间 */
+            justify-content: space-between;
+        }
+
+        div span {
+            width: 150px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+</body>
+
+</html>
